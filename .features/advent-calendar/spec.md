@@ -55,6 +55,8 @@ capability.
 18. As a project owner, I want a merged pull request from `dev` to `main` to
     deploy automatically to GitHub Pages so that the published calendar stays
     up to date.
+19. As a user, I want the calendar to have a modern Advent-inspired visual
+    design so that using it feels inviting and festive.
 
 ## Implementation Decisions
 
@@ -62,6 +64,8 @@ capability.
   TypeScript and Vite before implementing calendar functionality.
 - Add a project-appropriate `.gitignore` covering dependencies, build output,
   local environment files, and editor or operating-system artifacts.
+- Use a modern, mobile-first visual design with Advent colours, pastel tones,
+  tasteful Advent icons, and contemporary UI components.
 - Always load content for the current calendar year.
 - Make the current year the default while allowing navigation to previous
   configured years.
@@ -89,6 +93,9 @@ capability.
   fields, and unknown activity types in CI. Do not validate image path
   existence initially.
 - Run deployment only after validation and the application build succeed.
+- Set up the initial GitHub Actions pipeline as part of the project foundation,
+  including preview-mode exclusion, JSON validation, build, and GitHub Pages
+  deployment steps.
 - Add a GitHub Actions workflow that deploys the application to GitHub Pages
   when a pull request from `dev` to `main` is merged.
 - Ensure the pipeline disables preview mode for pushes to `dev` and for the
@@ -117,6 +124,7 @@ component, and end-to-end levels where appropriate:
 - Development-only progress reset.
 - Import replacing existing progress.
 - CI failing for invalid JSON configuration.
+- Modern responsive Advent-inspired visual design on mobile and desktop.
 
 The exact test tooling and detailed test fixtures remain to be established
 during implementation because the repository currently contains no application

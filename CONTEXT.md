@@ -13,6 +13,9 @@ The repository must include a project-appropriate `.gitignore` before regular
 development begins. It must exclude dependencies, build output, local
 environment files, and editor or operating-system artifacts.
 
+The visual direction is modern and mobile-first, using Advent-inspired colours,
+pastel tones, tasteful Advent icons, and contemporary UI components.
+
 ## Domain glossary
 
 - **Calendar year**: The year for which a complete set of Advent door contents
