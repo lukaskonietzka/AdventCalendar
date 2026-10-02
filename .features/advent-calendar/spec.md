@@ -60,6 +60,8 @@ capability.
 
 - Bootstrap the currently empty repository as a Vue 3 application using
   TypeScript and Vite before implementing calendar functionality.
+- Add a project-appropriate `.gitignore` covering dependencies, build output,
+  local environment files, and editor or operating-system artifacts.
 - Always load content for the current calendar year.
 - Make the current year the default while allowing navigation to previous
   configured years.

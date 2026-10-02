@@ -9,6 +9,10 @@ static application through GitHub Pages and requires an internet connection.
 The repository currently contains no application code. The first implementation
 step is to bootstrap a Vue 3 project with TypeScript and Vite.
 
+The repository must include a project-appropriate `.gitignore` before regular
+development begins. It must exclude dependencies, build output, local
+environment files, and editor or operating-system artifacts.
+
 ## Domain glossary
 
 - **Calendar year**: The year for which a complete set of Advent door contents
