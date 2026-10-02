@@ -93,6 +93,9 @@ pastel tones, tasteful Advent icons, and contemporary UI components.
   activity fields, and unknown activity types. Image path existence is not
   validated initially.
 - Deployment runs only after validation and the application build succeed.
+- Merging into `main` must be protected through GitHub branch rules or a
+  ruleset that requires the `validate-and-build` status check to pass. The
+  repository owner configures this enforcement in GitHub.
 - A GitHub Actions workflow must deploy the application to GitHub Pages when a
   pull request from `dev` to `main` is merged.
 - The pipeline must ensure that preview mode is disabled for pushes to `dev`

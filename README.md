@@ -38,6 +38,19 @@ npm run validate:content
 npm run build
 ```
 
+## Repository setup
+
+To prevent broken changes from being merged into `main`, configure a GitHub
+branch protection rule or ruleset for `main` with these requirements:
+
+- Require a pull request before merging.
+- Require the `validate-and-build` status check to pass.
+- Optionally require the branch to be up to date before merging.
+- Optionally restrict direct pushes to `main`.
+
+The workflow reports failures, but GitHub's branch protection configuration is
+what enforces the merge restriction.
+
 ## Project status
 
 The application foundation is in place. Calendar behaviour and content features

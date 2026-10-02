@@ -96,6 +96,8 @@ capability.
 - Set up the initial GitHub Actions pipeline as part of the project foundation,
   including preview-mode exclusion, JSON validation, build, and GitHub Pages
   deployment steps.
+- Document the required GitHub branch protection or ruleset configuration so
+  that `main` cannot receive a merge while `validate-and-build` is failing.
 - Add a GitHub Actions workflow that deploys the application to GitHub Pages
   when a pull request from `dev` to `main` is merged.
 - Ensure the pipeline disables preview mode for pushes to `dev` and for the
