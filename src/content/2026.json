@@ -1,4 +1,101 @@
 {
   "year": 2026,
-  "doors": []
+  "doors": [
+    {
+      "number": 1,
+      "activities": [{ "type": "text", "text": "Welcome to door 1." }]
+    },
+    {
+      "number": 2,
+      "activities": [{ "type": "text", "text": "Welcome to door 2." }]
+    },
+    {
+      "number": 3,
+      "activities": [{ "type": "text", "text": "Welcome to door 3." }]
+    },
+    {
+      "number": 4,
+      "activities": [{ "type": "text", "text": "Welcome to door 4." }]
+    },
+    {
+      "number": 5,
+      "activities": [{ "type": "text", "text": "Welcome to door 5." }]
+    },
+    {
+      "number": 6,
+      "activities": [{ "type": "text", "text": "Welcome to door 6." }]
+    },
+    {
+      "number": 7,
+      "activities": [{ "type": "text", "text": "Welcome to door 7." }]
+    },
+    {
+      "number": 8,
+      "activities": [{ "type": "text", "text": "Welcome to door 8." }]
+    },
+    {
+      "number": 9,
+      "activities": [{ "type": "text", "text": "Welcome to door 9." }]
+    },
+    {
+      "number": 10,
+      "activities": [{ "type": "text", "text": "Welcome to door 10." }]
+    },
+    {
+      "number": 11,
+      "activities": [{ "type": "text", "text": "Welcome to door 11." }]
+    },
+    {
+      "number": 12,
+      "activities": [{ "type": "text", "text": "Welcome to door 12." }]
+    },
+    {
+      "number": 13,
+      "activities": [{ "type": "text", "text": "Welcome to door 13." }]
+    },
+    {
+      "number": 14,
+      "activities": [{ "type": "text", "text": "Welcome to door 14." }]
+    },
+    {
+      "number": 15,
+      "activities": [{ "type": "text", "text": "Welcome to door 15." }]
+    },
+    {
+      "number": 16,
+      "activities": [{ "type": "text", "text": "Welcome to door 16." }]
+    },
+    {
+      "number": 17,
+      "activities": [{ "type": "text", "text": "Welcome to door 17." }]
+    },
+    {
+      "number": 18,
+      "activities": [{ "type": "text", "text": "Welcome to door 18." }]
+    },
+    {
+      "number": 19,
+      "activities": [{ "type": "text", "text": "Welcome to door 19." }]
+    },
+    {
+      "number": 20,
+      "activities": [{ "type": "text", "text": "Welcome to door 20." }]
+    },
+    {
+      "number": 21,
+      "activities": [{ "type": "text", "text": "Welcome to door 21." }]
+    },
+    {
+      "number": 22,
+      "activities": [{ "type": "text", "text": "Welcome to door 22." }]
+    },
+    {
+      "number": 23,
+      "activities": [{ "type": "text", "text": "Welcome to door 23." }]
+    },
+    {
+      "number": 24,
+      "activities": [{ "type": "text", "text": "Welcome to door 24." }]
+    }
+  ]
 }
