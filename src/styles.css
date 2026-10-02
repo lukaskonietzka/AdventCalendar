@@ -6,9 +6,74 @@
 body {
   margin: 0;
 }
-main {
+.calendar-page {
   box-sizing: border-box;
   min-height: 100vh;
-  padding: 3rem 1.25rem;
+  padding: 2.5rem 1rem;
+}
+.calendar-header {
+  max-width: 40rem;
+  margin: 0 auto 2rem;
   text-align: center;
+}
+.eyebrow {
+  color: #a85d72;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+h1 {
+  color: #7b2d48;
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  line-height: 1.05;
+  margin: 0.75rem 0;
+}
+.countdown {
+  color: #5b4964;
+  margin: 0;
+}
+.door-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0 auto;
+  max-width: 52rem;
+}
+.door {
+  aspect-ratio: 1;
+  align-items: center;
+  background: #e7dce2;
+  border: 2px solid #d2bdc7;
+  border-radius: 1rem;
+  color: #806b77;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.door--available {
+  background: #fff;
+  border-color: #c68da2;
+  box-shadow: 0 0.4rem 1rem #7b2d481c;
+  color: #7b2d48;
+}
+.door__number {
+  font-size: clamp(1.5rem, 7vw, 2.5rem);
+  font-weight: 800;
+}
+.door__status {
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-top: 0.35rem;
+  text-transform: uppercase;
+}
+
+@media (min-width: 600px) {
+  .calendar-page {
+    padding: 4rem 2rem;
+  }
+  .door-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 1rem;
+  }
 }
