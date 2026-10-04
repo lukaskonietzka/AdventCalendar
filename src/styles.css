@@ -40,6 +40,16 @@ h1 {
   margin: 0 auto;
   max-width: 52rem;
 }
+.calendar-error {
+  background: #fff;
+  border: 1px solid #c68da2;
+  border-radius: 1rem;
+  color: #7b2d48;
+  margin: 2rem auto 0;
+  max-width: 32rem;
+  padding: 1rem;
+  text-align: center;
+}
 .door {
   aspect-ratio: 1;
   align-items: center;

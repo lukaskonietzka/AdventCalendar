@@ -7,13 +7,13 @@ that the project can be developed, validated, built, and deployed consistently.
 
 **Status:** ready-for-agent
 
-- [ ] Vue 3, TypeScript, and Vite project are configured.
-- [ ] `.gitignore` excludes dependencies, build output, local environment files,
+- [x] Vue 3, TypeScript, and Vite project are configured.
+- [x] `.gitignore` excludes dependencies, build output, local environment files,
       and editor or operating-system artifacts.
-- [ ] Initial linting, formatting, and test commands are available.
-- [ ] A concise README explains the project's purpose and basic behaviour.
-- [ ] The README includes a small table of contents and a Developer section
+- [x] Initial linting, formatting, and test commands are available.
+- [x] A concise README explains the project's purpose and basic behaviour.
+- [x] The README includes a small table of contents and a Developer section
       covering installation, local development, tests, and production builds.
-- [ ] GitHub Actions validates configuration, builds the application, disables
+- [x] GitHub Actions validates configuration, builds the application, disables
       preview mode for deployment, and deploys to GitHub Pages after successful
       validation and build.

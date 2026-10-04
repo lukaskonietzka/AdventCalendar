@@ -23,6 +23,16 @@ npm install
 npm run dev
 ```
 
+To test future or past calendar dates locally, create a `.env.local` file:
+
+```env
+VITE_PREVIEW_MODE=true
+VITE_PREVIEW_DATE=2026-12-05
+```
+
+`VITE_PREVIEW_DATE` uses the local date format `YYYY-MM-DD`. Preview mode is
+local-development-only and is disabled by the production pipeline.
+
 ### Tests and quality checks
 
 ```sh

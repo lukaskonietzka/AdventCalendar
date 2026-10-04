@@ -7,8 +7,8 @@ content before it can be deployed.
 
 **Status:** ready-for-agent
 
-- [ ] Year-specific configuration supports 24 doors and ordered activities.
-- [ ] Text, image, riddle, and checklist activities are represented.
-- [ ] CI rejects invalid JSON, invalid or duplicate door numbers, missing
+- [x] Year-specific configuration supports 24 doors and ordered activities.
+- [x] Text, image, riddle, and checklist activities are represented.
+- [x] CI rejects invalid JSON, invalid or duplicate door numbers, missing
       required activity fields, and unknown activity types.
-- [ ] Image path existence is not required to pass validation.
+- [x] Image path existence is not required to pass validation.

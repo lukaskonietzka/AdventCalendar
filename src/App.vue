@@ -1,18 +1,19 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
-import calendarContentJson from './content/2026.json';
+import { getApplicationDate } from './calendar/application-date';
 import {
   getCurrentCalendarYear,
   getDaysUntilNextAdventStart,
   isDoorAvailable,
   isOutsideAdventPeriod,
 } from './calendar/date-logic';
-import type { Activity, CalendarContent, CalendarDoor } from './content/types';
+import type { Activity, CalendarDoor } from './content/types';
+import { getCalendarContent } from './content/calendar-loader';
 import { isValidCalendarDoor } from './content/runtime-validation';
 
-const calendarContent = calendarContentJson as CalendarContent;
-const today = ref(new Date());
-const currentYear = getCurrentCalendarYear(today.value);
+const today = ref(getApplicationDate());
+const currentYear = computed(() => getCurrentCalendarYear(today.value));
+const calendarContent = computed(() => getCalendarContent(currentYear.value));
 const selectedDoorNumber = ref<number | null>(null);
 const completedChecklistItems = ref<Set<string>>(new Set());
 const isOutsideAdvent = computed(() => isOutsideAdventPeriod(today.value));
@@ -21,11 +22,19 @@ const daysUntilAdvent = computed(() =>
 );
 
 function isAvailable(doorNumber: number): boolean {
-  return isDoorAvailable(calendarContent.year, doorNumber, today.value);
+  if (calendarContent.value === null) {
+    return false;
+  }
+
+  return isDoorAvailable(calendarContent.value.year, doorNumber, today.value);
 }
 
 function getDoor(doorNumber: number): CalendarDoor | null {
-  const door = calendarContent.doors.find(
+  if (calendarContent.value === null) {
+    return null;
+  }
+
+  const door = calendarContent.value.doors.find(
     (candidate) => candidate.number === doorNumber,
   );
 
@@ -53,7 +62,7 @@ function closeDoor(): void {
 }
 
 function getActivityKey(doorNumber: number, activityIndex: number): string {
-  return `${calendarContent.year}-${doorNumber}-${activityIndex}`;
+  return `${currentYear.value}-${doorNumber}-${activityIndex}`;
 }
 
 function isChecklistItemCompleted(activityKey: string): boolean {
@@ -107,7 +116,11 @@ function getActivityLabel(activity: Activity): string {
       </p>
     </header>
 
-    <section class="door-grid" aria-label="Advent doors">
+    <p v-if="calendarContent === null" class="calendar-error" role="alert">
+      No calendar content is configured for {{ currentYear }}.
+    </p>
+
+    <section v-else class="door-grid" aria-label="Advent doors">
       <article
         v-for="door in calendarContent.doors"
         :key="door.number"

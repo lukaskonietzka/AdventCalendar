@@ -7,8 +7,8 @@ mobile and desktop layouts.
 
 **Status:** ready-for-agent
 
-- [ ] The interface is mobile-first and remains usable on desktop.
-- [ ] Advent-inspired colours and pastel tones are applied consistently.
+- [x] The interface is mobile-first and remains usable on desktop.
+- [x] Advent-inspired colours and pastel tones are applied consistently.
 - [ ] Tasteful Advent icons and modern UI components support the visual
       hierarchy.
 - [ ] Locked, available, opened, and completed states are visually distinct.

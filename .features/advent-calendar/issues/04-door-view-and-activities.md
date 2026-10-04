@@ -6,7 +6,7 @@
 
 **Status:** ready-for-agent
 
-- [ ] A door can be opened and its activities are shown in order.
-- [ ] Text, local images, riddles, and checklists render correctly.
-- [ ] Riddles show an optional solution without answer validation.
-- [ ] A missing or invalid door shows an isolated, understandable error.
+- [x] A door can be opened and its activities are shown in order.
+- [x] Text, local images, riddles, and checklists render correctly.
+- [x] Riddles show an optional solution without answer validation.
+- [x] A missing or invalid door shows an isolated, understandable error.

@@ -7,7 +7,10 @@ doors are available using the device's local date.
 
 **Status:** ready-for-agent
 
-- [ ] The current calendar year is loaded by default.
-- [ ] Future doors are locked and eligible doors are available.
-- [ ] Outside the Advent period, a countdown showing whole days until 1
+- [x] The current calendar year is loaded by default.
+- [x] Future doors are locked and eligible doors are available.
+- [x] Outside the Advent period, a countdown showing whole days until 1
       December is displayed.
+- [x] Local development can activate preview mode with a simulated date.
+- [x] Preview mode is inactive when its environment flag is not enabled or the
+      simulated date is invalid.
