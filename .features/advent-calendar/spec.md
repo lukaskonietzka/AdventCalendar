@@ -66,6 +66,11 @@ capability.
   local environment files, and editor or operating-system artifacts.
 - Use a modern, mobile-first visual design with Advent colours, pastel tones,
   tasteful Advent icons, and contemporary UI components.
+- Give doors clear hover and keyboard-focus feedback, including a subtle zoom
+  or lift effect for doors that can be opened.
+- Use understandable door-state labelling or visual treatment instead of
+  relying only on the generic labels `Available` and `Locked`.
+- Show opened door content in a mobile-first modal that also works on desktop.
 - Always load content for the current calendar year.
 - Make the current year the default while allowing navigation to previous
   configured years.

@@ -63,6 +63,10 @@ pastel tones, tasteful Advent icons, and contemporary UI components.
   activities, and completion of the complete door.
 - A door is complete when all of its activities are complete.
 - Doors have four visible states: locked, available, opened, and completed.
+- Doors provide clear hover and keyboard-focus feedback; available doors may
+  use a subtle zoom or lift effect.
+- Door content opens in a mobile-first modal rather than inline below the
+  calendar grid.
 - Once opened, a door remains available for viewing later, including when the
   user navigates through historical years.
 - Progress can be exported as versioned JSON. Import is a corresponding
