@@ -3,99 +3,303 @@
   "doors": [
     {
       "number": 1,
-      "activities": [{ "type": "text", "text": "Welcome to door 1." }]
+      "activities": [
+        {
+          "type": "text",
+          "text": "Willkommen im Adventskalender! Nimm dir heute einen ruhigen Moment für dich."
+        }
+      ]
     },
     {
       "number": 2,
-      "activities": [{ "type": "text", "text": "Welcome to door 2." }]
+      "activities": [
+        {
+          "type": "checklist",
+          "items": [
+            "Lieblingsgetränk zubereiten",
+            "Eine Kerze anzünden",
+            "Fünf Minuten entspannen"
+          ]
+        }
+      ]
     },
     {
       "number": 3,
-      "activities": [{ "type": "text", "text": "Welcome to door 3." }]
+      "activities": [
+        {
+          "type": "riddle",
+          "question": "Ich habe Nadeln, bin aber kein Arzt. Was bin ich?",
+          "solution": "Ein Tannenbaum."
+        }
+      ]
     },
     {
       "number": 4,
-      "activities": [{ "type": "text", "text": "Welcome to door 4." }]
+      "activities": [
+        {
+          "type": "image",
+          "src": "/images/advent-candle.svg",
+          "alt": "Eine leuchtende Adventskerze"
+        },
+        {
+          "type": "text",
+          "text": "Manchmal reicht ein kleines Licht, um einen dunklen Tag heller zu machen."
+        }
+      ]
     },
     {
       "number": 5,
-      "activities": [{ "type": "text", "text": "Welcome to door 5." }]
+      "activities": [
+        {
+          "type": "text",
+          "text": "Heute ist Zeit für eine kleine digitale Pause. Lege dein Handy für zehn Minuten beiseite."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Benachrichtigungen ausschalten",
+            "Tief durchatmen",
+            "Blick aus dem Fenster werfen"
+          ]
+        }
+      ]
     },
     {
       "number": 6,
-      "activities": [{ "type": "text", "text": "Welcome to door 6." }]
+      "activities": [
+        {
+          "type": "riddle",
+          "question": "Was fällt im Winter vom Himmel, ohne sich weh zu tun?",
+          "solution": "Schnee."
+        }
+      ]
     },
     {
       "number": 7,
-      "activities": [{ "type": "text", "text": "Welcome to door 7." }]
+      "activities": [
+        {
+          "type": "image",
+          "src": "/images/winter-window.svg",
+          "alt": "Ein verschneites Fenster mit warmem Licht"
+        }
+      ]
     },
     {
       "number": 8,
-      "activities": [{ "type": "text", "text": "Welcome to door 8." }]
+      "activities": [
+        {
+          "type": "checklist",
+          "items": ["Eine Person anrufen", "Ein ehrliches Kompliment machen"]
+        }
+      ]
     },
     {
       "number": 9,
-      "activities": [{ "type": "text", "text": "Welcome to door 9." }]
+      "activities": [
+        {
+          "type": "text",
+          "text": "Kleine Rituale machen aus gewöhnlichen Tagen besondere Momente."
+        },
+        {
+          "type": "riddle",
+          "question": "Welche Farbe hat der Nikolausmantel meistens?",
+          "solution": "Rot."
+        }
+      ]
     },
     {
       "number": 10,
-      "activities": [{ "type": "text", "text": "Welcome to door 10." }]
+      "activities": [
+        {
+          "type": "checklist",
+          "items": [
+            "Lieblingslied auswählen",
+            "Laut mitsingen",
+            "Eine gute Erinnerung notieren"
+          ]
+        }
+      ]
     },
     {
       "number": 11,
-      "activities": [{ "type": "text", "text": "Welcome to door 11." }]
+      "activities": [
+        {
+          "type": "image",
+          "src": "/images/christmas-market.svg",
+          "alt": "Ein kleiner Weihnachtsmarkt bei Nacht"
+        },
+        {
+          "type": "text",
+          "text": "Ein Spaziergang durch die kalte Luft kann Wunder wirken."
+        }
+      ]
     },
     {
       "number": 12,
-      "activities": [{ "type": "text", "text": "Welcome to door 12." }]
+      "activities": [
+        {
+          "type": "riddle",
+          "question": "Was wird heller, je mehr man davon anzündet?",
+          "solution": "Kerzenlicht."
+        }
+      ]
     },
     {
       "number": 13,
-      "activities": [{ "type": "text", "text": "Welcome to door 13." }]
+      "activities": [
+        {
+          "type": "text",
+          "text": "Halbzeit! Was war dein schönster Moment in dieser Adventswoche?"
+        },
+        {
+          "type": "checklist",
+          "items": ["Einen schönen Moment erinnern", "Ihn mit jemandem teilen"]
+        }
+      ]
     },
     {
       "number": 14,
-      "activities": [{ "type": "text", "text": "Welcome to door 14." }]
+      "activities": [
+        {
+          "type": "image",
+          "src": "/images/advent-wreath.svg",
+          "alt": "Ein Adventskranz mit vier Kerzen"
+        }
+      ]
     },
     {
       "number": 15,
-      "activities": [{ "type": "text", "text": "Welcome to door 15." }]
+      "activities": [
+        {
+          "type": "checklist",
+          "items": [
+            "Einen Raum aufräumen",
+            "Eine gemütliche Ecke gestalten",
+            "Dort kurz innehalten"
+          ]
+        }
+      ]
     },
     {
       "number": 16,
-      "activities": [{ "type": "text", "text": "Welcome to door 16." }]
+      "activities": [
+        {
+          "type": "riddle",
+          "question": "Was trägt Kugeln, aber keinen Schmuck?",
+          "solution": "Ein Weihnachtsbaum."
+        },
+        {
+          "type": "text",
+          "text": "Manche Rätsel lösen sich leichter mit einer Tasse Tee."
+        }
+      ]
     },
     {
       "number": 17,
-      "activities": [{ "type": "text", "text": "Welcome to door 17." }]
+      "activities": [
+        {
+          "type": "text",
+          "text": "Heute darfst du etwas nur für dich tun. Es muss nicht produktiv sein."
+        }
+      ]
     },
     {
       "number": 18,
-      "activities": [{ "type": "text", "text": "Welcome to door 18." }]
+      "activities": [
+        {
+          "type": "checklist",
+          "items": [
+            "Eine Dankbarkeitsnotiz schreiben",
+            "Jemandem Danke sagen",
+            "Die Notiz sichtbar aufbewahren"
+          ]
+        }
+      ]
     },
     {
       "number": 19,
-      "activities": [{ "type": "text", "text": "Welcome to door 19." }]
+      "activities": [
+        {
+          "type": "image",
+          "src": "/images/gift-box.svg",
+          "alt": "Eine festlich verpackte Geschenkbox"
+        },
+        {
+          "type": "riddle",
+          "question": "Was kann man verschenken, ohne es einzupacken?",
+          "solution": "Zeit, Aufmerksamkeit oder ein Lächeln."
+        }
+      ]
     },
     {
       "number": 20,
-      "activities": [{ "type": "text", "text": "Welcome to door 20." }]
+      "activities": [
+        {
+          "type": "text",
+          "text": "Nur noch vier Tage! Atme tief durch und lass den vorweihnachtlichen Stress kurz los."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Drei tiefe Atemzüge nehmen",
+            "Eine Sache von der To-do-Liste streichen"
+          ]
+        }
+      ]
     },
     {
       "number": 21,
-      "activities": [{ "type": "text", "text": "Welcome to door 21." }]
+      "activities": [
+        {
+          "type": "riddle",
+          "question": "Welches Gewürz erinnert besonders an Weihnachten und duftet warm und süß?",
+          "solution": "Zimt."
+        }
+      ]
     },
     {
       "number": 22,
-      "activities": [{ "type": "text", "text": "Welcome to door 22." }]
+      "activities": [
+        {
+          "type": "checklist",
+          "items": [
+            "Eine Weihnachtskarte schreiben",
+            "Eine Nachricht verschicken",
+            "Jemandem eine Freude machen"
+          ]
+        }
+      ]
     },
     {
       "number": 23,
-      "activities": [{ "type": "text", "text": "Welcome to door 23." }]
+      "activities": [
+        {
+          "type": "image",
+          "src": "/images/christmas-tree.svg",
+          "alt": "Ein geschmückter Weihnachtsbaum"
+        },
+        {
+          "type": "text",
+          "text": "Morgen ist es so weit. Was möchtest du an den Feiertagen bewusst genießen?"
+        }
+      ]
     },
     {
       "number": 24,
-      "activities": [{ "type": "text", "text": "Welcome to door 24." }]
+      "activities": [
+        {
+          "type": "text",
+          "text": "Frohe Weihnachten! Danke, dass du dir jeden Tag einen kleinen Moment genommen hast."
+        },
+        {
+          "type": "checklist",
+          "items": [
+            "Licht anmachen",
+            "Mit lieben Menschen feiern",
+            "Den heutigen Moment genießen"
+          ]
+        }
+      ]
     }
   ]
 }

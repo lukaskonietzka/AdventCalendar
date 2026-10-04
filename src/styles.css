@@ -61,6 +61,9 @@ h1 {
   flex-direction: column;
   justify-content: center;
   position: relative;
+  transition:
+    box-shadow 160ms ease,
+    transform 160ms ease;
 }
 .door--available,
 .door--opened,
@@ -78,7 +81,19 @@ h1 {
   border-color: #82a77c;
   color: #376233;
 }
-.door__button:hover:not(:disabled) {
+.door--today {
+  border-color: #e2a93b;
+  box-shadow:
+    0 0 0 3px #f4d48b,
+    0 0.7rem 1.4rem #b7791f40;
+}
+.door--today .door__number {
+  color: #a46108;
+}
+.door--available:hover,
+.door--opened:hover,
+.door--completed:hover {
+  box-shadow: 0 0.7rem 1.4rem #7b2d4833;
   transform: translateY(-0.2rem) scale(1.02);
 }
 .door__button {

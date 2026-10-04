@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import {
   getCurrentCalendarYear,
   getDaysUntilNextAdventStart,
+  isCurrentAdventDay,
   isDoorAvailable,
   isOutsideAdventPeriod,
 } from '../src/calendar/date-logic';
@@ -31,5 +32,13 @@ describe('Advent date logic', () => {
   it('identifies dates outside Advent', () => {
     expect(isOutsideAdventPeriod(new Date(2026, 10, 30))).toBe(true);
     expect(isOutsideAdventPeriod(new Date(2026, 11, 24))).toBe(false);
+  });
+
+  it('identifies the current Advent door', () => {
+    const date = new Date(2026, 11, 5);
+
+    expect(isCurrentAdventDay(2026, 5, date)).toBe(true);
+    expect(isCurrentAdventDay(2026, 4, date)).toBe(false);
+    expect(isCurrentAdventDay(2027, 5, date)).toBe(false);
   });
 });

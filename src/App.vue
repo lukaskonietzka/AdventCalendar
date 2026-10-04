@@ -4,6 +4,7 @@ import { getApplicationDate } from './calendar/application-date';
 import {
   getCurrentCalendarYear,
   getDaysUntilNextAdventStart,
+  isCurrentAdventDay,
   isDoorAvailable,
   isOutsideAdventPeriod,
 } from './calendar/date-logic';
@@ -33,6 +34,10 @@ function isAvailable(doorNumber: number): boolean {
   }
 
   return isDoorAvailable(calendarContent.value.year, doorNumber, today.value);
+}
+
+function isToday(doorNumber: number): boolean {
+  return isCurrentAdventDay(currentYear.value, doorNumber, today.value);
 }
 
 function getDoor(doorNumber: number): CalendarDoor | null {
@@ -242,7 +247,10 @@ function getActivityLabel(activity: Activity): string {
         v-for="door in calendarContent.doors"
         :key="door.number"
         class="door"
-        :class="`door--${getDoorState(door)}`"
+        :class="[
+          `door--${getDoorState(door)}`,
+          { 'door--today': isToday(door.number) },
+        ]"
         :aria-label="`Door ${door.number}`"
       >
         <button
@@ -256,6 +264,7 @@ function getActivityLabel(activity: Activity): string {
           <span class="door__status" aria-hidden="true">
             {{ getDoorIcon(getDoorState(door)) }}
           </span>
+          <span v-if="isToday(door.number)" class="sr-only">Today</span>
         </button>
       </article>
     </section>

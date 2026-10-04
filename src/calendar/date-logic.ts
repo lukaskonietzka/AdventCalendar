@@ -31,6 +31,18 @@ export function isDoorAvailable(
   );
 }
 
+export function isCurrentAdventDay(
+  calendarYear: number,
+  doorNumber: number,
+  date: Date = new Date(),
+): boolean {
+  return (
+    date.getFullYear() === calendarYear &&
+    date.getMonth() === ADVENT_START_MONTH &&
+    date.getDate() === doorNumber
+  );
+}
+
 export function getDaysUntilNextAdventStart(date: Date = new Date()): number {
   const currentYearStart = createLocalDate(date.getFullYear(), 1);
   const nextStart =
